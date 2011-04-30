@@ -1,0 +1,11 @@
+.sections
+  #meetings
+    - if @next_meeting
+      %h1= meetup_title(@next_meeting)
+      .description= raw(@next_meeting['description'])
+      - if @coming_meetings.any?
+        %ul
+          - @coming_meetings.each do |meeting|
+            %li= meetup_title(meeting)
+    - else
+      No upcoming meetings.

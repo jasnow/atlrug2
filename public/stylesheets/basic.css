@@ -1,6 +1,35 @@
-#meetings .description {
-  font-size: 0.9em;
+body {
+  font-family:sans-serif;
 }
+
+.masthead {
+  font-size: 2em;
+  text-align: center;
+}
+.navigation li {
+  float: left;
+  list-style: none;
+  padding: 1em;
+}
+
+.navigation {
+  clear: both;
+  margin-left:  15%;
+  margin-right: 15%;
+}
+
+.sections .section {
+  width: 40%;
+  padding: 2em;
+  float: left;
+  font-size: 0.8em;
+}
+
+#meetings .description {
+  height: 14em;
+  overflow: auto;
+}
+
 #meetings .description p {
   margin: 0.3em;
 }

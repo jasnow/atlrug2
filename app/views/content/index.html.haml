@@ -1,11 +1,26 @@
 .sections
-  #meetings
-    - if @next_meeting
-      %h1= meetup_title(@next_meeting)
-      .description= raw(@next_meeting['description'])
-      - if @coming_meetings.any?
-        %ul
-          - @coming_meetings.each do |meeting|
-            %li= meetup_title(meeting)
-    - else
-      No upcoming meetings.
+  
+  .section
+    #meetings
+      - if @next_meeting
+        %h2= meetup_title(@next_meeting)
+        .description= raw(@next_meeting['description'])
+        - if @coming_meetings.any?
+          %h3 Future Meetings
+          %ul
+            - @coming_meetings.each do |meeting|
+              %li= meetup_title(meeting)
+      - else
+        %h1 No upcoming meetings.
+  
+  .section
+    #videos
+      - if @most_recent_video
+        %h2= @most_recent_video['title']
+        %embed{:src=> @most_recent_video['embedUrl'], :type=>"application/x-shockwave-flash", :width=>"480", :height=>"200", :allowscriptaccess=>"always", :allowfullscreen=>"true"}
+        - if @other_videos.any?
+          %h3 Other videos
+          %ul
+            - @other_videos.each do |video|
+              %li
+                %a{:href => video['url']}= video['title']

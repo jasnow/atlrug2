@@ -1,6 +1,6 @@
 module ApplicationHelper
   def meetup_title(meetup)
-    link_to(meetup['name']) +
+    link_to(meetup['name'], meetup['event_url']) +
     " (#{date_display(Time.at(meetup['time'].to_i/1000))})"
   end
   

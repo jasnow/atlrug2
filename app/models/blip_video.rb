@@ -1,3 +1,6 @@
+require 'rest_client'
+require 'cacheable'
+
 class BlipVideo
   include Cacheable
   

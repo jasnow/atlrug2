@@ -16,7 +16,8 @@
   .section
     #videos
       - if @most_recent_video
-        %h2= @most_recent_video['title']
+        %h2
+          %a{:href => @most_recent_video['url']}= @most_recent_video['title']
         %embed{:src=> @most_recent_video['embedUrl'], :type=>"application/x-shockwave-flash", :width=>"480", :height=>"200", :allowscriptaccess=>"always", :allowfullscreen=>"true"}
         - if @other_videos.any?
           %h3 Other videos

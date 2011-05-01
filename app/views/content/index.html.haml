@@ -3,7 +3,7 @@
   .section
     #meetings
       - if @next_meeting
-        %h2= meetup_title(@next_meeting)
+        %h1= meetup_title(@next_meeting)
         .description= raw(@next_meeting['description'])
         - if @coming_meetings.any?
           %h3 Future Meetings
@@ -16,9 +16,9 @@
   .section
     #videos
       - if @most_recent_video
-        %h2
+        %h1
           %a{:href => @most_recent_video['url']}= @most_recent_video['title']
-        %embed{:src=> @most_recent_video['embedUrl'], :type=>"application/x-shockwave-flash", :width=>"480", :height=>"200", :allowscriptaccess=>"always", :allowfullscreen=>"true"}
+        %embed{:src=> @most_recent_video['embedUrl'], :type=>"application/x-shockwave-flash", :width=>"480", :height=>"320", :allowscriptaccess=>"always", :allowfullscreen=>"true"}
         - if @other_videos.any?
           %h3 Other videos
           %ul

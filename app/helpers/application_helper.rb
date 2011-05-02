@@ -1,7 +1,10 @@
 module ApplicationHelper
+  def meetup_link(meetup)
+    link_to(meetup_title(meetup), meetup['event_url'])
+  end
+  
   def meetup_title(meetup)
-    link_to(meetup['name'], meetup['event_url']) +
-    " (#{date_display(Time.at(meetup['time'].to_i/1000))})"
+    "#{meetup['name']} (#{date_display(Time.at(meetup['time'].to_i/1000))})".sub('The Atlanta Ruby Meetup Group ','')
   end
   
   def date_display(time)

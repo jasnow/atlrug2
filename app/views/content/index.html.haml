@@ -3,17 +3,17 @@
   .section
     #meetings
       - if @next_meeting
-        %h1= meetup_title(@next_meeting)
+        %h1= meetup_link(@next_meeting)
         .description= raw(@next_meeting['description'])
         - if @coming_meetings.any?
           %h3 Future Meetings
           %ul
             - @coming_meetings.each do |meeting|
-              %li= meetup_title(meeting)
+              %li= meetup_link(meeting)
       - else
         %h1 No upcoming meetings.
   
-  .section
+  .section.hide
     #videos
       - if @most_recent_video
         %h1

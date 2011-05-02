@@ -76,13 +76,19 @@ body {
 /* line 5, ../../app/stylesheets/_layout.scss */
 a {
   text-decoration: none;
+  color: #a8442e;
 }
 /* line 4, ../../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 9, ../../app/stylesheets/_layout.scss */
+/* line 10, ../../app/stylesheets/_layout.scss */
+.hide {
+  display: none;
+}
+
+/* line 14, ../../app/stylesheets/_layout.scss */
 div#sidebar {
   position: absolute;
   top: 0;
@@ -91,11 +97,11 @@ div#sidebar {
   border-right: 2px solid black;
   padding: 10px;
 }
-/* line 15, ../../app/stylesheets/_layout.scss */
+/* line 20, ../../app/stylesheets/_layout.scss */
 div#sidebar #navigation {
   margin-right: -11px;
 }
-/* line 17, ../../app/stylesheets/_layout.scss */
+/* line 22, ../../app/stylesheets/_layout.scss */
 div#sidebar #navigation ul li {
   border: 1px solid gray;
   padding: 1em;
@@ -103,21 +109,31 @@ div#sidebar #navigation ul li {
   text-align: right;
 }
 
-/* line 26, ../../app/stylesheets/_layout.scss */
+/* line 31, ../../app/stylesheets/_layout.scss */
 div#main {
   position: absolute;
   top: 0;
   bottom: 0;
   margin-left: 342px;
   padding: 1em;
+  padding: 6em 4em 2em 1em;
   background-color: #a8442e;
   background-color: #cfa098;
 }
-/* line 33, ../../app/stylesheets/_layout.scss */
+/* line 39, ../../app/stylesheets/_layout.scss */
 div#main h1 {
+  font-size: 2em;
+}
+/* line 42, ../../app/stylesheets/_layout.scss */
+div#main h2 {
   font-size: 1.5em;
 }
-/* line 35, ../../app/stylesheets/_layout.scss */
-div#main h1 a {
-  color: #a8442e;
+/* line 47, ../../app/stylesheets/_layout.scss */
+div#main #meetings .future-meetings, div#main #meetings .description {
+  font-size: 0.9em;
+  line-height: 1.4em;
+  margin-bottom: 1em;
+  border: 1px solid gray;
+  background-color: white;
+  padding: 1.5em 2em;
 }

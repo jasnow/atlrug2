@@ -3,4 +3,5 @@ Atlrug2::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   root :to => "content#index"
   match '/meetings' => 'content#meetings'
+  match '/videos' => 'content#videos'
 end

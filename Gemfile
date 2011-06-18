@@ -18,6 +18,5 @@ gem 'dalli'
 
 group :development, :test do
   gem 'webrat'
-  gem 'ruby-debug'
-  gem 'mongrel'
+  gem 'ruby-debug19'
 end

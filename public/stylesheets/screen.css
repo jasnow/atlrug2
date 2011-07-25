@@ -41,6 +41,7 @@ table {
 }
 
 /* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p180@atlrug2/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.2-p0@altrug2/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
@@ -48,21 +49,25 @@ caption, th, td {
 }
 
 /* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p180@atlrug2/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.2-p0@altrug2/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
 /* line 101, ../../../../../.rvm/gems/ruby-1.9.2-p180@atlrug2/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../../.rvm/gems/ruby-1.9.2-p0@altrug2/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
 /* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p180@atlrug2/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.2-p0@altrug2/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
 /* line 115, ../../../../../.rvm/gems/ruby-1.9.2-p180@atlrug2/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 115, ../../../../../.rvm/gems/ruby-1.9.2-p0@altrug2/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -79,6 +84,7 @@ a {
   color: #a8442e;
 }
 /* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p180@atlrug2/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p0@altrug2/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 a:hover {
   text-decoration: underline;
 }

@@ -5,7 +5,7 @@ module Cacheable
       # MEMCACHED.flush if params[:flush_cache]
       if Object.const_defined? :MEMCACHED
         cache_key = Digest::MD5.hexdigest("#{key}-#{Rails.env}")
-        MEMCACHED.fetch(cache_key, 1.minute) do
+        MEMCACHED.fetch(cache_key, 1.hour) do
           yield
         end
       else

@@ -2,8 +2,6 @@
 db/*.sqlite3
 log/*.log
 tmp/
-<<<<<<< HEAD
 config/api_keys.yml
 .rvmrc
-=======
->>>>>>> b583d99f962d66e9130cd673527e57342630c99f
+pubulic/stylesheets/*.css

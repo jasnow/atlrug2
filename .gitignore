@@ -4,4 +4,4 @@ log/*.log
 tmp/
 config/api_keys.yml
 .rvmrc
-pubulic/stylesheets/*.css
+public/stylesheets/*.css

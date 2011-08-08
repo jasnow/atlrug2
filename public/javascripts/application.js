@@ -1,2 +1,8 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+$(document).ready(function() {
+  
+  $('.sections > h1').click(function(event) {
+    $(this).next().toggle();
+    return false;
+  });
+  
+});

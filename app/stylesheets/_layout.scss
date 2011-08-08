@@ -11,47 +11,35 @@ a {
   display: none;
 }
 
-div#sidebar {
-  @include stretch-y;
-  width: 320px;
-  border-right: 2px solid black;
-  padding: 10px;
-  
-  #navigation {
-    margin-right: -11px;
-    ul li {
-      border: 1px solid rgb(128,128,128);
-      padding: 1em;
-      background-color: rgb(190, 190, 190);
-      text-align: right;
-    }
+body {
+  padding: 0 10%;
+}
+
+#masthead, #navigation {
+  text-align: center;
+}
+
+#navigation {
+  padding: 0 0 0 28%;
+  li {
+    float: left;
+    padding-left: 20px;
   }
 }
 
-div#main {
-  @include stretch-y;
-  margin-left: 342px;
+#main {
+  clear:both;
+}
+
+p.question {
+  font-size: 1.5em;
+  margin-left: -1em;
+}
+.sections > h1 {
+  font-size: 2em;
+  padding-top: 1em;
+}
+.detail {
+  display: none;
   padding: 1em;
-  padding: 6em 4em 2em 1em;
-  background-color: rgb(168,68,46);
-  background-color: rgb(207,160,152);
-  
-  h1 {
-    font-size: 2em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  
-  #meetings {
-    .future-meetings, .description {
-      font-size: 0.9em;
-      line-height: 1.4em;
-      margin-bottom: 1em;
-      //border-bottom: 1px dotted red;
-      border: 1px solid rgb(128, 128, 128);
-      background-color: white;
-      padding: 1.5em 2em;
-    }
-  }
 }

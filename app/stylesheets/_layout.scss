@@ -64,15 +64,17 @@ p.question {
   padding-top: 2em;
   margin-top: 150px;
   margin-left: 50px;
+  width: 60%;
 }
 
 #sponsors {
+  h2 {
+    clear:both;
+  }
   .platinum {
     li {
       float:left;
-      width: 50%;
-      padding-bottom: 1em;
+      padding: 0 3em 1em 0;
     }
-    width: 100%;
   }
 }

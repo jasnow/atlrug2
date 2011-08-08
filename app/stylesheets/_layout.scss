@@ -39,7 +39,39 @@ p.question {
   font-size: 2em;
   padding-top: 1em;
 }
-.detail {
+.detail, #footer {
+  width: 52em;
   display: none;
   padding: 1em;
+  h1 {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-bottom: .5em;
+  }
+  h2 {
+    font-size: 1.1em;
+    padding-bottom: 1em;
+  }
+  p {
+    line-height: 20px;
+    padding-bottom: .25em;
+  }
+}
+
+#footer {
+  display: block;
+  border-top: 1px dashed rgba(168,68,46, 0.25);
+  padding-top: 2em;
+  margin-top: 150px;
+}
+
+#sponsors {
+  .platinum {
+    li {
+      float:left;
+      width: 50%;
+      padding-bottom: 1em;
+    }
+    width: 100%;
+  }
 }

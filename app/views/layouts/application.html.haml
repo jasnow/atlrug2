@@ -17,13 +17,5 @@
       #masthead
         %a{:href => '/'}
           %img{:src => '/images/gem-small.png', :alt => 'Atlanta Ruby Logo' }
-      #navigation{:style => 'display:none;'}
-        %ul
-          %li= link_to 'Meetings', '/meetings'
-          %li= link_to 'Videos', '/videos'
-          - if true
-            %li= link_to 'Learn', '/learn'
-            %li= link_to 'Work', '/work'
-            %li= link_to 'Hire', '/hire'
-            %li= link_to 'Sponsors', '/sponsors'
     #main= yield
+    #footer= render 'sponsors'

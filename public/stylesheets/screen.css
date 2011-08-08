@@ -126,7 +126,43 @@ p.question {
 }
 
 /* line 42, ../../app/stylesheets/_layout.scss */
-.detail {
+.detail, #footer {
+  width: 52em;
   display: none;
   padding: 1em;
+}
+/* line 46, ../../app/stylesheets/_layout.scss */
+.detail h1, #footer h1 {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-bottom: .5em;
+}
+/* line 51, ../../app/stylesheets/_layout.scss */
+.detail h2, #footer h2 {
+  font-size: 1.1em;
+  padding-bottom: 1em;
+}
+/* line 55, ../../app/stylesheets/_layout.scss */
+.detail p, #footer p {
+  line-height: 20px;
+  padding-bottom: .25em;
+}
+
+/* line 61, ../../app/stylesheets/_layout.scss */
+#footer {
+  display: block;
+  border-top: 1px dashed rgba(168, 68, 46, 0.25);
+  padding-top: 2em;
+  margin-top: 150px;
+}
+
+/* line 69, ../../app/stylesheets/_layout.scss */
+#sponsors .platinum {
+  width: 100%;
+}
+/* line 70, ../../app/stylesheets/_layout.scss */
+#sponsors .platinum li {
+  float: left;
+  width: 50%;
+  padding-bottom: 1em;
 }

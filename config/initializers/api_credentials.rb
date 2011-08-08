@@ -9,7 +9,7 @@ class ApiCredentials
   end
 
   def self.key(service)
-    return env[service] if env[service]
+    return ENV[service] if ENV[service]
     keys[service]
   end
 end

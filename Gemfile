@@ -16,6 +16,8 @@ gem 'compass'
 gem 'kgio'
 gem 'dalli'
 
+gem 'heroku'
+
 group :development, :test do
   gem 'webrat'
   gem 'ruby-debug19'

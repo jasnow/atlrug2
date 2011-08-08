@@ -1,4 +1,4 @@
-unless File.exists?("#{Rails.root}/config/api_keys.yml")
+unless (Rails.env == 'production') || File.exists?("#{Rails.root}/config/api_keys.yml")
   raise "Copy config/api_keys.yml.sample to config/api_keys.yml and edit with your api key(s). :)"
 end
 
@@ -9,6 +9,7 @@ class ApiCredentials
   end
 
   def self.key(service)
+    return env[service] if env[service]
     keys[service]
   end
 end

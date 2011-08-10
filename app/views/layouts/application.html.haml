@@ -17,5 +17,9 @@
       #masthead
         %a{:href => '/'}
           %img{:src => '/images/gem-small.png', :alt => 'Atlanta Ruby Logo' }
+      #tweet
+        %a{:href=>"http://twitter.com/atlrug", :class=> "twitter-follow-button", :'data-show-count'=> "false"} Follow @atlrug
+        %script{:src=> "http://platform.twitter.com/widgets.js", :type=>"text/javascript"}
     #main= yield
-    #footer= render 'sponsors'
+    #footer
+      = render 'sponsors'

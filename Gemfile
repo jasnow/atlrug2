@@ -19,7 +19,7 @@ gem 'hassle', :git => 'git://github.com/koppen/hassle.git'
 gem 'kgio'
 gem 'dalli'
 
-gem 'heroku'
+gem 'tzinfo'
 
 group :development, :test do
   gem 'webrat'
